@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách cửa hàng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
+</head>
+<style>
+    .store-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    .store-description {
+        text-align: center;
+        margin: 15px 0 30px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .filter-section {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .store-list .card {
+        border: none;
+    }
+
+    .store-list img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .card-body {
+        padding-top: 15px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .btn-detail {
+        background-color: #f28b82;
+        color: white;
+        font-size: 14px;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn-detail:hover {
+        background-color: #d46a6a;
+    }
+
+    .main-shops {
+        margin-top: 120px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <!-- Top header -->
+        <div class="top-header">
+            <strong>THỬ ĐỒ ONLINE</strong>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.webp" alt="Logo">
+                </a>
+
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Centered nav links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="newin.html">New In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Sản Phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lookbook.html">Lookbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dịp/Sự Kiện</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="store.html">Cửa Hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="prolyci.html">Chính Sách</a></li>
+                    </ul>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav navbar-icons">
+                        <li class="nav-item"><a class="nav-link" href="favourite.html"><i class="bi bi-heart"></i><span
+                                    class="badge">0</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html"><i class="bi bi-bag"></i><span
+                                    class="badge">0</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="login1.html"><i class="bi bi-person"></i></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end header  -->
+    <div class="main-shops">
+        <div class="container">
+            <h1 class="store-title">Danh sách cửa hàng</h1>
+            <h5 class="text-center">
+                Với hệ thống cửa hàng toàn quốc, hãy ghé thăm cửa hàng MARC gần nhất để có trải nghiệm thoải mái. <br>
+                Quý khách sẽ được tặng ngay 1 món quà bất kỳ nhân dịp sinh nhật!
+            </h5>
+            <!-- Bộ lọc -->
+            <div class="filter-section py-2">
+                <select class="form-select d-inline-block w-auto me-2">
+                    <option selected>Thành phố</option>
+                    <option value="1">Hồ Chí Minh</option>
+                    <option value="2">Hà Nội</option>
+                    <option value="3">Đà Nẵng</option>
+                </select>
+                <select class="form-select d-inline-block w-auto">
+                    <option selected>Quận huyện</option>
+                    <option value="1">Quận 1</option>
+                    <option value="2">Quận 2</option>
+                    <option value="3">Quận 3</option>
+                </select>
+            </div>
+            <!-- Danh sách cửa hàng -->
+            <div class="store-list row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/store1.webp" class="card-img-top" alt="MARC PARC MALL">
+                        <div class="card-body">
+                            <h5 class="card-title">MARC PARC MALL</h5>
+                            <p class="card-text">Địa chỉ: Tầng 2 - PARC mall, 547 – 549 Tạ Quang Bửu, P. 4, Q. 8, TP. Hồ
+                                Chí Minh</p>
+                            <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="img/store4.PNG" class="card-img-top" alt="MARC THISO MALL">
+                        <div class="card-body">
+                            <h5 class="card-title">MARC THISO MALL</h5>
+                            <p class="card-text">Địa chỉ: Tầng 2 - Khu Glamourista - Thiso mall, 10 Mai Chí Thọ, P. Thủ
+                                Thiêm, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+                            <a href="#" class="btn btn-detail">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main  -->
+
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-column text-center">
+                    <div class="footer-logo">
+                        <p class="text-white">MARC</p>
+                    </div>
+                    <p>Thương hiệu thời trang MARC - CÔNG TY CỔ PHẦN SẢN XUẤT THƯƠNG MẠI NÉT VIỆT</p>
+                    <p>Địa chỉ: Tầng 15.06 Tòa nhà Văn phòng Golden King, Số 15 Nguyễn Lương Bằng, Phường Tân Phú,
+                        Quận 7, Tp. HCM</p>
+                    <p>Chính sách bảo mật <br> Các điều khoản và điều kiện</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h6>Về chúng tôi</h6>
+                    <a href="#">Giới thiệu MARC</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Cảm hứng thời trang</a>
+                    <a href="#">Danh sách cửa hàng</a>
+                    <a href="#">Nhượng quyền thương hiệu</a>
+                    <a href="#">Khách hàng thân thiết</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo hành</a>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <a href="#">Liên hệ đến MARC</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Hướng dẫn tạo tài khoản</a>
+                    <a href="#">Hướng dẫn đặt hàng</a>
+                    <a href="#">Mua Online nhận tại cửa hàng</a>
+                    <a href="#">Hướng dẫn mua trước trả sau</a>
+                    <a href="#">Quy định và hướng dẫn đổi/trả hàng</a>
+                    <a href="#">Hướng dẫn đánh giá sản phẩm</a>
+                    <a href="#">Hướng dẫn xem và đổi thưởng</a>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h6>Liên lạc</h6>
+                    <p>Đặt hàng trực tuyến (8h-21h): <a href="tel:1900636942" class="text-primary">1900 636942</a>
+                    </p>
+                    <p>Chăm sóc khách hàng: <a href="tel:1900636940" class="text-primary">1900 636940</a></p>
+                    <p>Email: <a href="mailto:marcsalesonline@gmail.com"
+                            class="text-primary">marcsalesonline@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

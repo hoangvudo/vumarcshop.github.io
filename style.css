@@ -1,0 +1,209 @@
+/* Custom CSS */
+
+.top-header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.navbar-custom {
+    background-color: #fff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #666;
+}
+
+.navbar-icons .nav-link {
+    color: #000;
+    font-size: 3rem;
+    /* Tăng kích thước icon */
+    position: relative;
+    margin-left: 5px;
+}
+
+.navbar-icons .nav-link .badge {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: red;
+    color: #fff;
+    font-size: 0.6rem;
+    border-radius: 50%;
+    padding: 6px 8px;
+}
+
+.navbar-brand img {
+    width: 118px;
+}
+
+
+.box-text {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box-text a {
+    text-decoration: none;
+    /* Tắt gạch chân */
+    color: #000;
+    /* Màu sắc cho văn bản */
+    font-weight: 500;
+    /* Độ đậm của văn bản */
+}
+
+.box-text a:hover {
+    color: #666;
+    /* Màu khi di chuột vào */
+}
+
+
+.product-card {
+    width: 300px;
+    /* Chiều rộng cố định của khung sản phẩm */
+
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.favorite-icon {
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff6b6b;
+}
+
+.favorite-icon:hover {
+    color: #ff4040;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.footer-column {
+    color: #6c757d;
+}
+
+.footer-column h6 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-column a {
+    color: #6c757d;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.newsletter {
+    color: white;
+    background-color: #444;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="email"] {
+    width: 27%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+button.btn.btn-secondary {
+    border-radius: 26px;
+    margin-left: -57px;
+    margin-top: 11px;
+}
+
+.box-course {
+    margin-top: 136px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.header .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .navbar-nav .nav-link {
+    font-size: 16px;
+}
+
+.header .navbar-nav {
+    padding: 5px;
+}
+
+.header .navbar-nav .nav-link {
+    color: #333;
+}
+
+.header .navbar-nav .nav-link i {
+    margin-right: 5px;
+}
+* {
+    font-family: "Questrial", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+ /* hiệu ứng gạch chân ở giữa chạy ra  */
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ff6f61; /* Màu gạch chân */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff6f61;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất cả bài viết</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .highlight-card {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .highlight-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+
+        }
+
+        .article-card img {
+            border-radius: 8px;
+            object-fit: cover;
+            width: 100%;
+            height: 300px;
+        }
+
+        .article-card {
+            text-align: left;
+        }
+
+        .article-meta {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .main-blog {
+            margin-top: 120px;
+        }
+
+        .align-items-center {
+            background-color: #cfcfcf;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- Top header -->
+        <div class="top-header">
+            <strong>THỬ ĐỒ ONLINE</strong>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.webp" alt="Logo">
+                </a>
+
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Centered nav links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="newin.html">New In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Sản Phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lookbook.html">Lookbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dịp/Sự Kiện</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="store.html">Cửa Hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="prolyci.html">Chính Sách</a></li>
+                    </ul>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav navbar-icons">
+                        <li class="nav-item"><a class="nav-link" href="favourite.html"><i class="bi bi-heart"></i><span
+                                    class="badge">0</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html"><i class="bi bi-bag"></i><span
+                                    class="badge">0</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="login1.html"><i class="bi bi-person"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end header  -->
+    <div class="main-blog">
+        <div class="container my-5">
+            <h2 class="mb-4">Góc tư vấn mặc đẹp</h2>
+            <!-- Khu vực bài viết nổi bật -->
+            <div class="row mb-4">
+                <div class="col-lg-7 highlight-card">
+                    <img src="img/blog.webp" alt="Highlight Article">
+                </div>
+                <div class="col-lg-5 d-flex align-items-center">
+                    <div>
+                        <h6 class="text-uppercase text-muted">
+                            <p class="text-danger">
+                                Góc tư vấn mặc đẹp
+                            </p>
+                        </h6>
+                        <h3>Bí Kíp Makeup Mùa Đông Với Tone Trầm Ấm Áp</h3>
+                        <p>Mùa đông đang tới gần, nên làm gì để bản thân trông thật xinh đẹp và cuốn hút đây? Hãy cùng
+                            MARC cập nhật ngay những phong cách trang điểm...</p>
+                        <h6 class="text-uppercase text-muted">
+                            <p class="text-danger">
+                                Đọc Tin Ngay !!
+                            </p>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Danh sách bài viết -->
+            <div class="row g-4 py-3">
+                <!-- Bài viết nhỏ -->
+                <div class="col-md-3">
+                    <div class="article-card">
+                        <img src="img/blog1.jpg" Article">
+                        <h6 class="mt-2 text-danger">Góc tư vấn mặc đẹp</h6>
+                        <p class="article-meta">18/11/2024</p>
+                        <h5>
+                            Bí Quyết Phối Đồ Layer Mùa Đông Ấm Áp Và Sành Điệu
+                        </h5>
+                        <p>Phối đồ layer mùa đông là cách mặc xếp lớp các items thời trang với nhau một cách hài hòa về
+                            thiết kế và họa tiết để cho ra một...</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="article-card">
+                        <img src="img/blog2.jpg" alt="Article">
+                        <h6 class="mt-2 text-danger">Góc tư vấn mặc đẹp</h6>
+                        <p class="article-meta">18/11/2024</p>
+                        <h5>
+                            TOP Mẫu Túi Xách Phối Cực Đẹp Với Những Set Đồ Mùa Đông
+                        </h5>
+                        <p>
+                            Mùa lạnh, ngoài những bộ trang phục ấm áp thì nàng cần có những cách phối các phụ kiện sao
+                            cho phù hợp, dưới đây MARC sẽ giới thiệu cho...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="article-card">
+                        <img src="img/blog3.jpg" alt="Article">
+                        <h6 class="mt-2 text-danger">Góc tư vấn mặc đẹp</h6>
+                        <p class="article-meta">18/11/2024</p>
+                        <h5>
+                            Các Chất Liệu Vải Mùa Đông Nên Chọn Cho Thời Tiết Chớm Lạnh
+                        </h5>
+                        <p>
+                            Nhờ khả năng co giãn và giữ nhiệt cực tốt mà trang phục các chất liệu vải dành cho mùa đông
+                            đã trở thành con át chủ bài của tủ...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="article-card">
+                        <img src="img/blog4.webp" alt="Article">
+                        <h6 class="mt-2 text-danger">Góc tư vấn mặc đẹp</h6>
+                        <p class="article-meta">18/11/2024</p>
+                        <h5>
+                            TOP Phụ Kiện Mùa Đông Bạn Không Nên Bỏ Lỡ
+                        </h5>
+                        <p>Cuối năm là khoảng thời gian thời tiết chuyển mình mạnh mẽ nhất, nàng sẽ thấy những cơn gió
+                            lạnh xuất lạnh xuất hiện với tần suất dày đặc. Lúc...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div class="container">
+                    <h3>
+                        Tin tức nhà MARC
+                    </h3>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-7 highlight-card">
+                            <img src="img/news.webp" alt="Highlight Article">
+                        </div>
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <div>
+                                <h6 class="text-uppercase text-muted">
+                                    <p class="text-danger">
+                                        TIN TỨC NHÀ MARC
+                                    </p>
+                                </h6>
+                                <h3>DEAL 20/10: GIẢM ĐẾN 50% | HOÀN TIỀN ĐẾN 399K</h3>
+                                <p>Chúc mừng Ngày Phụ Nữ Việt Nam 20/10, MARC dành tặng Nàng vô vàn ưu đãi vừa tinh tế
+                                    lại vừa kinh tế: GIẢM ĐẾN 50%: HOÀN TIỀN ĐẾN 399K (khi mua...</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 py-3">
+                        <!-- Bài viết nhỏ -->
+                        <div class="col-md-3">
+                            <div class="article-card">
+                                <img src="img/new1.webp" Article">
+                                <h6 class="mt-2 text-danger">TIN TỨC NHÀ MARC</h6>
+                                <p class="article-meta">18/11/2024</p>
+                                <h5>
+                                    SUMMER GIFT | MARC x HYGIENE
+                                </h5>
+                                <p>Mùa hè chính là khoảnh khắc trọn vẹn nhất để Nàng thỏa sức khoe dáng trong các thiết
+                                    kế ngọt ngào, bay bổng. Và đặc biệt trang phục Nàng không...</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="article-card">
+                                <img src="img/new2.webp" alt="Article">
+                                <h6 class="mt-2 text-danger">TIN TỨC NHÀ MARC</h6>
+                                <p class="article-meta">18/11/2024</p>
+                                <h5>
+                                    EARTHDAY | ĐỔI QUẦN ÁO CŨ - LẤY QUÀ XINH YÊU
+                                </h5>
+                                <p>
+                                    ☘️Ngày Trái Đất năm nay, các Nàng hãy cùng MARC "bật mood" sống xanh với dự án thu
+                                    gom quần áo cũ GO GREEN SAVE GREEN❤️Toàn bộ quần áo được...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="article-card">
+                                <img src="img/new3.webp" alt="Article">
+                                <h6 class="mt-2 text-danger">TIN TỨC NHÀ MARC</h6>
+                                <p class="article-meta">18/11/2024</p>
+                                <h5>
+                                    MARC x DaQuyn | GIFT FOR YOU
+                                </h5>
+                                <p>
+                                    🎄GIÁNG SINH TẶNG QUÀ XINH🎄Tháng 12 này, MARC kết hợp cùng thương hiệu Mỹ Phẩm
+                                    Thuần Xanh DaQuyn gửi đến các Nàng ưu đãi vô cùng hấp dẫn:🎁TẶNG combo quà... </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="article-card">
+                                <img src="img/new4.webp" alt="Article">
+                                <h6 class="mt-2 text-danger">TIN TỨC NHÀ MARC</h6>
+                                <p class="article-meta">18/11/2024</p>
+                                <h5>
+                                    MUA ĐỒ MARC - NHẬN QUÀ INNISFREE
+                                </h5>
+                                <p>Từ 24/11 đến 30/11, với mỗi hóa đơn mua hàng từ 500K tại MARC, Nàng sẽ được tặng ngay
+                                    01 Gift Voucher 100K khi mua hàng tại HỆ THỐNG CỬA...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- end news  -->
+
+        </div>
+    </div>
+    <!-- end main  -->
+      <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer-column text-center">
+                    <div class="footer-logo">
+                        <p class="text-white">MARC</p>
+                    </div>
+                    <p>Thương hiệu thời trang MARC - CÔNG TY CỔ PHẦN SẢN XUẤT THƯƠNG MẠI NÉT VIỆT</p>
+                    <p>Địa chỉ: Tầng 15.06 Tòa nhà Văn phòng Golden King, Số 15 Nguyễn Lương Bằng, Phường Tân Phú,
+                        Quận 7, Tp. HCM</p>
+                    <p>Chính sách bảo mật <br> Các điều khoản và điều kiện</p>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h6>Về chúng tôi</h6>
+                    <a href="#">Giới thiệu MARC</a>
+                    <a href="#">Tuyển dụng</a>
+                    <a href="#">Cảm hứng thời trang</a>
+                    <a href="#">Danh sách cửa hàng</a>
+                    <a href="#">Nhượng quyền thương hiệu</a>
+                    <a href="#">Khách hàng thân thiết</a>
+                    <a href="#">Chính sách giao hàng</a>
+                    <a href="#">Chính sách bảo hành</a>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h6>Hỗ trợ khách hàng</h6>
+                    <a href="#">Liên hệ đến MARC</a>
+                    <a href="#">Câu hỏi thường gặp</a>
+                    <a href="#">Hướng dẫn tạo tài khoản</a>
+                    <a href="#">Hướng dẫn đặt hàng</a>
+                    <a href="#">Mua Online nhận tại cửa hàng</a>
+                    <a href="#">Hướng dẫn mua trước trả sau</a>
+                    <a href="#">Quy định và hướng dẫn đổi/trả hàng</a>
+                    <a href="#">Hướng dẫn đánh giá sản phẩm</a>
+                    <a href="#">Hướng dẫn xem và đổi thưởng</a>
+                </div>
+                <div class="col-md-3 footer-column">
+                    <h6>Liên lạc</h6>
+                    <p>Đặt hàng trực tuyến (8h-21h): <a href="tel:1900636942" class="text-primary">1900 636942</a>
+                    </p>
+                    <p>Chăm sóc khách hàng: <a href="tel:1900636940" class="text-primary">1900 636940</a></p>
+                    <p>Email: <a href="mailto:marcsalesonline@gmail.com"
+                            class="text-primary">marcsalesonline@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

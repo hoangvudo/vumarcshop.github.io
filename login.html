@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign Up Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.webp">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <style>
+        .auth-card {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            margin-top: 180px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .divider:not(:empty)::before {
+            margin-right: .5em;
+        }
+
+        .divider:not(:empty)::after {
+            margin-left: .5em;
+        }
+
+        body {
+            background-image: url(img/backgroud.webp);
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="header">
+        <!-- Top header -->
+        <div class="top-header">
+            <strong>THỬ ĐỒ ONLINE</strong>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logo.webp" alt="Logo">
+                </a>
+
+                <!-- Toggle button for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Centered nav links -->
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="newin.html">New In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="product.html">Sản Phẩm</a></li>
+                        <li class="nav-item"><a class="nav-link" href="lookbook.html">Lookbook</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Dịp/Sự Kiện</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Cửa Hàng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Thử Đồ Online</a></li>
+                    </ul>
+
+                    <!-- Right-aligned icons -->
+                    <ul class="navbar-nav navbar-icons">
+                        <li class="nav-item"><a class="nav-link" href="favourite.html"><i class="bi bi-heart"></i><span
+                                    class="badge">0</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="shop.html"><i class="bi bi-bag"></i><span
+                                    class="badge">0</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html"><i class="bi bi-person"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- end header  -->
+    <div class="auth-card shadow">
+        <ul class="nav nav-tabs justify-content-center mb-3" id="authTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab">Đăng Nhập</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab">Đăng Ký</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <!-- Login Form -->
+            <div class="tab-pane fade show active" id="login" role="tabpanel">
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email hoặc số điện thoại</label>
+                        <input type="email12" id="login-email" class="form-control"
+                            placeholder="Nhập email hoặc số điện thoại" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Mật khẩu</label>
+                        <input type="password" id="login-password" class="form-control" placeholder="Nhập mật khẩu"
+                            required>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <a href="#" class="text-muted">Quên mật khẩu?</a>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block">Đăng Nhập</button>
+                </form>
+                <div class="divider">Hoặc</div>
+                <div class="d-flex justify-content-center mt-3 social-icons">
+                    <a href="https://accounts.google.com/o/oauth2/v2/auth/oauthchooseaccount?access_type=online&scope=profile%20openid%20email&state=N6kRs7G34VboR3WcdwIOmbi3ErcHo6Le&response_type=code&client_id=3371183033-dcda1sl1an7h46p6qapglonr245r8ccl.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fsocialloginplus-apps.haravan.com%2Fsocialloginplus%2Fapi%2Fzauth%2Fgoogle%2Fcallback&service=lso&o2v=2&ddm=1&flowName=GeneralOAuthFlow">
+                        <img src="img/google.png" alt="Google" title="Đăng nhập với Google">
+                    </a>
+                    <a href="https://www.facebook.com/privacy/consent/gdp/?params%5Bapp_id%5D=840539422652232&params%5Bdisplay%5D=%22popup%22&params%5Bkid_directed_site%5D=false&params%5Blogger_id%5D=%22f6955204-a14b-4778-835f-f158a271b483%22&params%5Bnext%5D=%22read%22&params%5Bredirect_uri%5D=%22https%3A%5C%2F%5C%2Fsocialloginplus-apps.haravan.com%5C%2Fsocialloginplus%5C%2Fapi%5C%2Fzauth%5C%2Ffacebook%5C%2Fcallback%22&params%5Bresponse_type%5D=%22code%22&params%5Breturn_scopes%5D=false&params%5Bscope%5D=%5B%22email%22%5D&params%5Bstate%5D=%22N6kRs7G34VboR3WcdwIOmbi3ErcHo6Le%22&params%5Bsteps%5D=%7B%22read%22%3A%5B%22email%22%2C%22baseline%22%2C%22public_profile%22%5D%7D&params%5Btp%5D=%22unspecified%22&params%5Bcui_gk%5D=%22%5BPASS%5D%3A%22&params%5Bis_limited_login_shim%5D=false&source=gdp_delegated">
+                        <img src="img/facebook.webp" alt="Facebook" title="Đăng nhập với Facebook">
+                    </a>
+                </div>
+            </div>
+            <!-- Sign Up Form -->
+            <div class="tab-pane fade" id="signup" role="tabpanel">
+                <form>
+                    <div class="form-group">
+                        <label for="signup-name">Họ và tên</label>
+                        <input type="text" id="signup-name" class="form-control" placeholder="Nhập họ và tên" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email12" id="signup-email" class="form-control" placeholder="Nhập email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signup-password">Mật khẩu</label>
+                        <input type="password" id="signup-password" class="form-control" placeholder="Tạo mật khẩu"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Đăng Ký</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
